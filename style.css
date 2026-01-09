@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #d8cfc4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Georgia", serif;
+}
+
+.diary {
+  background: #fdf8ee;
+  width: 90%;
+  max-width: 520px;
+  padding: 40px 35px;
+  border-radius: 6px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+
+/* subtle notebook spine */
+.diary::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 10px;
+  height: 100%;
+  background: linear-gradient(#b08968, #7f5539);
+  border-radius: 6px 0 0 6px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+.entry {
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed #cbbfae;
+}
+
+.entry p {
+  margin: 0 0 6px;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.entry span {
+  font-size: 14px;
+  color: #5f5b55;
+  font-style: italic;
+}
